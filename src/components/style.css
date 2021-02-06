@@ -1,0 +1,27 @@
+.myform {
+    background: #eee;
+    padding: 30px;
+    margin: 15px auto;
+    width: 90%;
+}
+
+.myform h2 {    
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.myform h4 {    
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.iteminput {
+    display: block;
+    margin: 5px 0;
+}
+
+.iteminput span {
+    width: 120px;
+    display: inline-block;
+    vertical-align: top;
+}
+

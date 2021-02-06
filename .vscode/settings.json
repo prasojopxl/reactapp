@@ -3,7 +3,7 @@
       "source.fixAll.eslint": true,
       "source.organizeImports": true
     },
-    "editor.tabSize": 3,
+    "editor.tabSize": 2,
     "editor.formatOnSave": true,
     "editor.wordWrap": "on",
     "editor.defaultFormatter": "esbenp.prettier-vscode",
