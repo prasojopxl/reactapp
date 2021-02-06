@@ -74,6 +74,7 @@ const CustomForm = () => {
                 <InputText title="Email"/>
                 <InputText title="Password"/>
                 <InputText title="Ulangi Password"/>
+                <hr/>
                 <h4>Resolusi Tahun Ini</h4>
                 <InputCheck name="Menguasai HTML"/>
                 <InputCheck name="Paham CSS"/>

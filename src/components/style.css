@@ -5,6 +5,9 @@
     width: 90%;
 }
 
+hr {
+    margin: 30px 0;
+}
 .myform h2 {    
     margin-top: 0;
     padding-top: 0;
@@ -13,6 +16,8 @@
 .myform h4 {    
     padding-bottom: 0;
     margin-bottom: 0;
+    padding-top: 0;
+    margin-top: 0;
 }
 .iteminput {
     display: block;
@@ -20,7 +25,7 @@
 }
 
 .iteminput span {
-    width: 120px;
+    width: 130px;
     display: inline-block;
     vertical-align: top;
 }
