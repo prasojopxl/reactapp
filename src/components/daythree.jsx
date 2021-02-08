@@ -8,6 +8,7 @@ const DayThree = () => {
         {skor}
         <button onClick={() => setSkor(skor + 1)}>Tambah</button>
         <button onClick={() => setSkor(skor - 1)}>Kurang</button>
+        <button onClick={() => setSkor(100)}>Selesai</button>
     </div>
   );
 }
