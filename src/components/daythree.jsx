@@ -1,8 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const DayThree = () => {
-  const [skor, setSkor] = useState(0);
+  const [skor, setSkor] = useState(10);
   
+    useEffect(() => {
+        setSkor(100)
+    }, []);
+
   return (
     <div>
         {skor}
