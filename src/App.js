@@ -9,12 +9,12 @@ function App() {
   const [tampil, setTampil] = useState(false)
   return (
     <div className="App">
-      {/* <Kendaraan jenis="Motor" merk1="Honda" merk2="Yamaha" merk3="Suzuki"/>
-      <Kendaraan jenis="Mobil" merk1="honda" merk2="Mitsubishi" merk3="Tesla"/>
-      <CustomForm/> */}
+      {/* <Kendaraan type="Motor" merks={["yamaha","honda"]}/>
+      <Kendaraan type="Mobil" merks={["honda","toyota","tesla"]}/> */}
+      {/* <CustomForm/> */}
       {/* <DayThree/> */}
 
-      
+      <hr/>
       <PapanNilai/>
       {tampil && <Coba/>}
       <button onClick={()=>setTampil(true)}>Tampil</button>

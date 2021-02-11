@@ -1,10 +1,12 @@
 const Kendaraan = (props)=> {
     return (
         <div style={{textAlign:"left"}}>
-            <h2>Kendaraan : {props.jenis}</h2>
-            {props.jenis}: {props.merk1}<br/>
-            {props.jenis}: {props.merk2}<br/>
-            {props.jenis}: {props.merk3}
+            <h2>Kendaraan : {props.type}</h2>
+            {props.merks.map((merk)=> {
+                return (
+                    <div> {props.type} {merk} </div>
+                )
+            } )}
         </div>
     )
 }
