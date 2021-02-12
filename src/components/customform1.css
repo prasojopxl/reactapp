@@ -1,0 +1,49 @@
+.containerform {
+    max-width: 400px;
+    margin: 30px auto;
+    display: block;
+    width: 95%;
+}
+
+.wrp-iteminput {
+    padding: 20px;
+    border: #666 solid 1px;
+    position: relative;
+    margin: 20px 0;
+}
+
+.subtitle {
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: 25px;
+    padding: 5px;
+    margin-top: -15px;
+}
+
+.small-wrpimput {
+    margin: 0 auto;
+    text-align: left;
+}
+
+.small-wrpimput  .iteminput {
+    display: block;
+}
+
+.small-wrpimput input {
+    margin-right: 10px;
+}
+
+.iteminput {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.iteminput input, textarea {
+    flex: 1;
+}
+
+.iteminput label {
+    min-width: 130px;
+}

@@ -1,3 +1,4 @@
+import {useState} from "react";
 import "./style.css";
 
 const Label = (props) => {
@@ -6,7 +7,7 @@ const Label = (props) => {
 
 const InputText = (props) => {
     return(
-        <div className="iteminput"><Label title={props.title}/><input type="text"/></div>
+        <div className="iteminput"><Label title={props.title}/><input type="text" value="" /></div>
     )
 }
 
@@ -34,8 +35,8 @@ const InputRadio = (props) => {
     return (
         <div className="iteminput">
             <Label title={props.title}/>
-            <input type="radio" name={props.id} id={props.name}/><label for={props.name}>{props.name}</label>
-            <input type="radio" name={props.id} id={props.name2}/><label for={props.name2}>{props.name2}</label>
+            <input type="radio" name={props.id} id={props.name}/><label >{props.name}</label>
+            <input type="radio" name={props.id} id={props.name2}/><label>{props.name2}</label>
         </div>
     )
 }
@@ -52,18 +53,29 @@ const InputTextarea = (props) => {
 const InputCheck = (props) => {
     return (
         <div className="iteminput">
-            <input type="checkbox" name={props.name} id={props.name}/><label for={props.name}>{props.name}</label>
+            <input type="checkbox" name={props.name} id={props.name}/><label >{props.name}</label>
         </div>
     )
 }
 
 const CustomForm = () => {
+    const [nama,setName] = useState("");
+    const [nim,setNim] = useState("");
+    const [tgl,setTgl] = useState("");
+    const [alamat,setAlamat] = useState("");
+    const [username,setUserName] = useState("");
+    const [email,setEmail] = useState("");
+    const [password,setPassword] = useState("");
+    const [check1,setCheck1] = useState("");
+    const [check2,setCheck2] = useState("");
+    const [check3,setCheck3] = useState("");
+    
     return (
         <div className="myform">
             <form>
                 <h2>Form Registrasi</h2>
                 <h4>Biodata</h4>
-                <InputText title="Nama"/>
+                <InputText title="Nama" />
                 <InputText title="NIM"/>
                 <InputSelect title="Tanggal Lahir" tgl1={1} tgl2={2} bln1="Jan" bln2="Feb" th1={1990} th2={1991}/>
                 <InputTextarea title="Alamat"/>

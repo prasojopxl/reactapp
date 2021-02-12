@@ -1,12 +1,13 @@
-import {useState} from "react"
 // import Kendaraan from "./components/kendaraan";
 // import CustomForm from "./components/customForm";
 // import DayThree from "./components/daythree";
-import PapanNilai from "./components/papanNilai";
-import Coba from "./components/coba";
+// import PapanNilai from "./components/papanNilai";
+// import Coba from "./components/coba";
+// import LoginForm from "./components/loginForm";
+import {CustomForm1} from "./components/customform1";
 
 function App() {
-  const [tampil, setTampil] = useState(false)
+  // const [tampil, setTampil] = useState(false)
   return (
     <div className="App">
       {/* <Kendaraan type="Motor" merks={["yamaha","honda"]}/>
@@ -14,11 +15,16 @@ function App() {
       {/* <CustomForm/> */}
       {/* <DayThree/> */}
 
-      <hr/>
+      {/* <hr/>
       <PapanNilai/>
       {tampil && <Coba/>}
       <button onClick={()=>setTampil(true)}>Tampil</button>
-      <button onClick={()=>setTampil(false)}>Hidden</button>
+      <button onClick={()=>setTampil(false)}>Hidden</button> */}
+
+      {/* <LoginForm/> */}
+      <CustomForm1/>
+
+
     </div>
   );
 }
