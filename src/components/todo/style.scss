@@ -1,0 +1,52 @@
+@import "../variable.scss";
+
+.wrp-todo {
+    max-width: 500px;
+    margin: 20px auto;
+    .header {
+        background: var(--color-orange);
+        padding: var(--space20);
+        color: white;
+        display: flex;
+        justify-content: center;
+    }
+    .contents {
+        background: var(--color-gray-soft);
+        padding: var(--space);
+        color: var(--color-black-dark);
+    }
+}
+
+.wrp-createtodo {
+    display: flex;
+    justify-content: space-between;
+    border: var(--color-gray) solid 1px;
+    input {
+        flex: 1;
+        border:none;
+        padding: 5px 10px;
+    }
+    button {
+        background: var(--color-orange);
+        border:none;
+        padding: 10px 20px;
+        color:white;
+        cursor: pointer;
+    }
+}
+
+.wrp-listtodo {
+    margin-top: 20px;
+    .itemtodo {
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 0;
+        position: relative;
+        padding-right: 100px;
+        .action {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+    }
+}

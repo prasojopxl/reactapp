@@ -8,7 +8,7 @@ export const Cart = () => {
     const [cart, setCart] = useState(0)
 
     return (
-        <div className="container">
+        <div className="wrp-cart">
             <Header total={cart}/>
             <Description tambah={()=>setCart(cart+1)} kurang={()=>setCart(cart-1)}/>
         </div>

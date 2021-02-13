@@ -1,37 +1,36 @@
 @import "../variable.scss";
 
-.container {
+.wrp-cart {
     margin: 20px auto;
     max-width: 500px;
-
-}
-.header {
-    background-color: var(--color-blue);
-    color:white;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.desc {
-    background: var(--color-gray-soft);
-    padding: var(--space);
-    color: var(--color-black);
-}
-
-.addcart {
-    background: var(--color-gray);
-    color: #fff;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    button {
-        background: var(--color-blue);
-        border: none;
-        color: white;
+    .header {
+        background-color: var(--color-blue);
+        color:white;
+        padding: var(--space20);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .desc {
+        background: var(--color-gray-soft);
+        padding: var(--space);
+        color: var(--color-black);
+    }
+    
+    .addcart {
+        background: var(--color-gray);
+        color: #fff;
         padding: 10px;
-        margin: 5px;
-        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        button {
+            background: var(--color-blue);
+            border: none;
+            color: white;
+            padding: 10px;
+            margin: 5px;
+            cursor: pointer;
+        }
     }
 }

@@ -7,6 +7,7 @@
 // import {Cart} from "./Cart";
 // import {CustomForm1} from "./components/customform1";
 import {Cart} from "./components/cart/Cart";
+import {Todo} from "./components/todo/Todo";
 
 
 function App() {
@@ -27,7 +28,7 @@ function App() {
       {/* <LoginForm/> */}
       {/* <CustomForm1/> */}
       <Cart/>
-
+      <Todo/>
 
     </div>
   );
