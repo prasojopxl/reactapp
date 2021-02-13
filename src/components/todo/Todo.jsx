@@ -50,6 +50,9 @@ export const Todo = () => {
                     })}
                 </div>
             </div>
+            <div className="wrp-todosinfo">
+                There are <strong>{todos.length}</strong> tasks
+            </div>
         </div>
     )
 }
