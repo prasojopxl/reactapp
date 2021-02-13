@@ -20,18 +20,31 @@ export const Todo = () => {
                         setTask("")
                     }}>Create</button>
                 </div>
-                {task}
                 <div className="wrp-listtodo">
-                    {todos.map((item, i, a)=>{
+                    {todos.map((item, i)=>{
                         return (                            
                             <div className="itemtodo">
                                 <div className="desc">
                                     {i+1+ ". " + item}
                                 </div>
                                 <div className="action">
-                                    <button>Edit</button>
-                                    <button>Delete</button>
+                                    <button onClick={()=> {
+                                        setTask(item);
+                                        setTodos((prev)=>{
+                                            const newData = [...prev];
+                                            newData.splice(i,1);
+                                            return newData;
+                                        })
+                                    }}>Edit</button>
+                                    <button onClick={()=> {
+                                        setTodos((prev)=>{
+                                            const newData = [...prev];
+                                            newData.splice(i,1);
+                                            return newData;
+                                        })
+                                    }}>Delete</button>
                                 </div>
+                                {}
                             </div>
                         )
                     })}
