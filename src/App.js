@@ -5,6 +5,7 @@
 // import Coba from "./components/coba";
 // import LoginForm from "./components/loginForm";
 import {CustomForm1} from "./components/customform1";
+import {Cart} from "./Cart";
 
 function App() {
   // const [tampil, setTampil] = useState(false)
@@ -22,6 +23,7 @@ function App() {
       <button onClick={()=>setTampil(false)}>Hidden</button> */}
 
       {/* <LoginForm/> */}
+      <Cart/>
       <CustomForm1/>
 
 
