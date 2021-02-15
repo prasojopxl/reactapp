@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import { Link } from "react-router-dom";
 import "./style.scss";
 
 export const Todo = () => {
@@ -28,6 +29,7 @@ export const Todo = () => {
                                     {i+1+ ". " + item}
                                 </div>
                                 <div className="action">
+                                    <Link to={"/todo/"+i}>Detail</Link>
                                     <button onClick={()=> {
                                         setTask(item);
                                         setTodos((prev)=>{

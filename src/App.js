@@ -7,13 +7,17 @@
 // import {Cart} from "./Cart";
 // import {CustomForm1} from "./components/customform1";
 import {Cart} from "./components/cart/Cart";
-import {Todo} from "./components/todo/Todo";
+
+import {BrowserRouter, Switch, Route, Link} from "react-router-dom";
+import { Todo } from "./components/todo/Todo";
+import { TodoDetail } from "./components/todo/TodoDetail";
 
 
 function App() {
   // const [tampil, setTampil] = useState(false)
   return (
-    <div className="App">
+      <BrowserRouter>
+
       {/* <Kendaraan type="Motor" merks={["yamaha","honda"]}/>
       <Kendaraan type="Mobil" merks={["honda","toyota","tesla"]}/> */}
       {/* <CustomForm/> */}
@@ -27,10 +31,23 @@ function App() {
 
       {/* <LoginForm/> */}
       {/* <CustomForm1/> */}
-      <Cart/>
-      <Todo/>
+      {/* <Cart/>
+      <Todo/> */}
+      <div className="mainmenu">
+        <Link to="/todo">Component Todo</Link><br/>
+        <Link to="/cart">Component Cart</Link><br/>
+        <Link to="/">Home</Link>
+      </div>
 
-    </div>
+
+      <Switch>
+        <Route path="/todo" exact component={Todo}/>
+        <Route path="/todo/:id" exact component={TodoDetail}/>
+        <Route path="/cart" exact component={Cart}/>
+        <Route path="/" exact component={()=> <div>halaman home</div>}/>
+      </Switch>      
+      </BrowserRouter>
+
   );
 }
 
