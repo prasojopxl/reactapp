@@ -11,6 +11,7 @@ import {Cart} from "./components/cart/Cart";
 import {BrowserRouter, Switch, Route, Link} from "react-router-dom";
 import { Todo } from "./components/todo/Todo";
 import { TodoDetail } from "./components/todo/TodoDetail";
+import { TodoDetailState } from "./components/todo/TodoDetailState";
 
 
 function App() {
@@ -43,6 +44,7 @@ function App() {
       <Switch>
         <Route path="/todo" exact component={Todo}/>
         <Route path="/todo/:id" exact component={TodoDetail}/>
+        <Route path="/todo-detail/" exact component={TodoDetailState}/>
         <Route path="/cart" exact component={Cart}/>
         <Route path="/" exact component={()=> <div>halaman home</div>}/>
       </Switch>      
