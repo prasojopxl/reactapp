@@ -14,12 +14,17 @@ export const Todo = () => {
                 <div className="wrp-createtodo">
                     <input type="text" value={task} onChange={(e)=>setTask(e.target.value)}/>
                     <button onClick={(e)=> {
-                        setTodos((prev)=>{
-                            const newData = [...prev];
-                            newData.push(task);
-                            return newData;
-                        });
-                        setTask("")
+                        if (task.length > 0) {
+                            setTodos((prev)=>{
+                                const newData = [...prev];
+                                newData.push(task);
+                                return newData;
+                            });
+                            setTask("")
+                        }
+                        else {
+                            alert ("masih kosong")
+                        }
                     }}>Create</button>
                 </div>
                 <div className="wrp-listtodo">
