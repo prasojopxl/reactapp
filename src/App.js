@@ -6,12 +6,14 @@
 // import LoginForm from "./components/loginForm";
 // import {Cart} from "./Cart";
 // import {CustomForm1} from "./components/customform1";
+import "./style.scss";
 import {Cart} from "./components/cart/Cart";
 
-import {BrowserRouter, Switch, Route, Link} from "react-router-dom";
+import {BrowserRouter, Switch, Route, Link, NavLink} from "react-router-dom";
 import { Todo } from "./components/todo/Todo";
 import { TodoDetail } from "./components/todo/TodoDetail";
 import { TodoDetailState } from "./components/todo/TodoDetailState";
+import { BelajarRedirect } from "./BelajarRedirect";
 
 
 function App() {
@@ -38,6 +40,9 @@ function App() {
         <Link to="/todo">Component Todo</Link><br/>
         <Link to="/cart">Component Cart</Link><br/>
         <Link to="/">Home</Link>
+
+        <NavLink className="bar" activeClassName="bar--active" to="todo">Ke Todo</NavLink>
+        <NavLink className="bar" activeStyle={{color:"red"}} to="cart">Ke Cart</NavLink>
       </div>
 
 
@@ -46,7 +51,11 @@ function App() {
         <Route path="/todo/:id" exact component={TodoDetail}/>
         <Route path="/todo-detail/" exact component={TodoDetailState}/>
         <Route path="/cart" exact component={Cart}/>
+        <Route path="/belajar-redirect" exact component={BelajarRedirect}/>
+        <Route path="/belajar-redirect/:nama" exact component={BelajarRedirect}/>
         <Route path="/" exact component={()=> <div>halaman home</div>}/>
+        <Route path="*" component={()=>"not found"}/>
+
       </Switch>      
       </BrowserRouter>
 
